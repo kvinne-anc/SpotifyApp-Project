@@ -19,8 +19,8 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 
     ],
     sticky='top',
-    color='light', 
-    light=True, 
+    color='light',
+    light=True,
     dark=False
 )
 
@@ -74,6 +74,7 @@ def display_page(pathname):
         return process.layout
     else:
         return dcc.Markdown('## Page not found')
+
 
 # Run app server: https://dash.plot.ly/getting-started
 if __name__ == '__main__':
